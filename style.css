@@ -1,0 +1,83 @@
+body {
+    
+    min-height: 100vh;
+    min-width: 100vh;
+    margin: 1rem 6rem 1rem 6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.header{
+    /*background-image:linear-gradient(to right bottom, rgba(60, 156, 65, 0.521), rgba(33, 189, 22, 0.616)), url(./images/HeaderImage.png); */
+    background-color: rgb(239, 241, 235);
+    height: 90vh;
+    width: 100%;
+    background-size: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    position: relative; /* if i dont have position relative here the Z-index will not work */
+    border-radius: 1rem;
+    z-index: 100;
+    display: inline-block;
+}
+.body{
+    
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    background-color: #f7f7f7;;
+    margin-top: -10rem;
+    height: 100%;
+    z-index: 90;
+
+}
+.header_image {
+    float: right;
+    margin: 0 4rem 0 0;
+    border-radius: 0 0rem 10rem 10rem;
+    background-color: rgba(144, 211, 144, 0.288);
+}
+.header_image_zia{
+    margin-top: 4rem;
+    width: 350px;
+    border-radius: 0 0rem 10rem 10rem;
+    
+}
+.header_heading_main {
+    color: rgb(61, 58, 58);
+    letter-spacing: 0.8rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+    display: inline-block;
+}
+.header_text {
+    text-align: center;
+    border:solid 3px green;
+    margin: 12rem 0 0 6rem;
+    display: inline-block;
+}
+.header_heading_sub{
+    
+    
+}
+.header_nav_menu li{
+    display: inline-block;
+    width: 12rem;
+    color:  rgb(61, 58, 58);
+    float: left;
+    list-style-type: none;
+    text-decoration: none;
+
+    
+}
+a{
+    padding: .5rem;
+    border-radius: 4px;
+    transition: .5s;
+    
+
+}
+a:hover{
+    background-color:rgb(55, 59, 55);
+    color: white;
+}
+a:active{
+    color:rgb(55, 59, 55);
+}
+
