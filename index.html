@@ -5,7 +5,7 @@
       href="https://fonts.googleapis.com/css?family=Kalam"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/mainpage.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,12 @@
   </head>
   <body>
     <header>
-      <nav>
+      <p id="menu-icon" onclick="openMenu()">&#9776;</p>
+      <div id="navigation__background"></div>
+      <nav id="navContent">
+        <a href="javascript:void(0)" id="closebtn" onclick="closeMenu()"
+          >&times;</a
+        >
         <ul>
           <li><a href="#">Home Page</a></li>
           <li><a href="#">Background</a></li>
@@ -22,38 +27,117 @@
         </ul>
       </nav>
     </header>
+
     <main id="wrapper">
-      <section id="section-img">
-        <img
-          src="./images/firstimage.png"
-          id="main-profile-photo"
-          title="profilephoto"
-        />
-      </section>
-      <section id="section-content">
-        <article id="article-Intro">
-          <p class="speech-bubble">Hello</p>
-          <h1>I'am Ahmad Zia Wasi</h1>
-          <h3>Programmer and Web Developer</h3>
+      <section id="section-left">
+        <article>
+          <h1>Ah. Zia Wasi</h1>
+          <img src="/images/Zia.png" id="ProfileImg" />
+          <p>
+            Born with personality is an accident but dying as a personality is
+            an achievement.
+          </p>
+          <section id="Section-links">
+            <a href="https://www.facebook.com/zia.wsi/"
+              ><img src="/images/facebook.png" alt="facebook"
+            /></a>
+            <a href="https://www.linkedin.com/in/herrwasi/"
+              ><img src="/images/linkedin.png" alt="LinkedIn"
+            /></a>
+            <a href=""><img src="/images/Github.png" alt="Github" /></a>
+          </section>
+          <section id="sectionProLinks">
+            <a href="./contact/"
+              ><img src="./images/contactme.jpg" id="proImage" />Contact Me</a
+            >
+
+            <a href="#"
+              ><img src="./images/background.jpg" id="proImage" />Background
+            </a>
+            <a
+              href="https://www.linkedin.com/pulse/yahoo-breach-2013-owasp-ahmad-zia-wasi/"
+              ><img src="./images/articles.jfif" id="proImage" />My Article</a
+            >
+            <a href="./CV_Ahmadzia_Wasi.pdf" target="_blank"
+              ><img src="./images/cv.jpg" id="proImage" />Resume
+            </a>
+          </section>
         </article>
-        <article id="article-contact">
-          <label>Age</label>
-          <address>30 Years Old</address>
-          <label id="label">E-mail</label>
-          <address>ahmadzia.wasi@powercoders.org</address>
-          <label>Phone</label>
-          <address>+41 78 205 9003</address>
-          <label>Job Status</label>
-          <address>Open to Work</address>
-          <label>Address</label>
-          <address>Hauptstrasse 26, 6315 Oberägeri Zug Switzerland</address>
+      </section>
+      <section id="section-right-top">
+        <span id="span-left"
+          ><h1>Ah. Zia Wasi</h1>
+          <h2>Programmer and Web Developer</h2>
+          <p>
+            I am a programmer and web developer. I used to develop bank related
+            online database as final year project for Kardan Univeristy.
+            Similarly I have a Diploma in Business Administration and therefore
+            I poses enough knowledge about financial softwares.
+          </p>
+          <span id="span_leftLink">
+            <a href="./CV_Ahmadzia_Wasi.pdf" target="_blank" id="resumeButton"
+              >Review Resume</a
+            >
+            <a href="#" id="visitButton">Visit my Work</a></span
+          >
+        </span>
+        <span id="span-right"
+          ><img
+            src="./images/ThanksGod.jpg"
+            alt="Thanking God"
+            id="ThanksGodImg"
+          />
+        </span>
+      </section>
+      <section id="section-right">
+        <span id="section-right-span">
+          <h1>What I do</h1>
+          <p>
+            I have over 9 years of experience mostly in Financial and NGO
+            sectors, I have also used to develop special purpose databases for
+            specific project using SQL and asp.net. most of my experience comes
+            from a Bank and an International firm.
+          </p>
+        </span>
+        <article id="article-html">
+          <img src="./images/html.jpg" alt="HTML-Logo" />
+          <p>
+            HTML stands for HyperText Markup Language. It's a standard languge
+            used to create Webpages. HTML 5.2 is the latest version of HTML.
+          </p>
+        </article>
+        <article id="article-css">
+          <img src="./images/CSS.jpg" alt="CSS-Logo" />
+          <p>
+            CSS stands for Cascading Style Sheets. It's used to add style to
+            your HTML Pages. CSS 2.1 is the latest version of CSS.
+          </p>
+        </article>
+        <article id="article-javascript">
+          <img src="./images/js.jpg" alt="Javascript-Logo" />
+          <p>
+            JavaScript is a Scripting Language that allows us to create
+            interactive webpage, it can be used as Client or Server side.
+            ECMAScript 2020 is the latest version of JavaScript.
+          </p>
+        </article>
+        <article id="article-python">
+          <img src="./images/python.png" alt="Python-Logo" />
+          <p>
+            Python is high level general purpose Programing language, its famous
+            because of its productivity and simplicity of it's syntax
+          </p>
+        </article>
+        <article id="article-sql">
+          <img src="./images/sql.png" alt="SQL-Logo" />
+          <p>
+            SQL stands for Structured Query Language. its used to store, update
+            and retrive data from Relational databases, to be more precise sql
+            is used to communicate with RDBMS.
+          </p>
         </article>
       </section>
-      <footer id="footer">
-        <img src="./images/facebook.png" alt="Facebook" />
-        <img src="./images/Github.png" alt="GitHub" />
-        <img src="./images/linkedin.png" alt="linkedin" />
-      </footer>
     </main>
+    <script src="./javascript/javascript.js"></script>
   </body>
 </html>

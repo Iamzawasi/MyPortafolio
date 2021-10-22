@@ -3,42 +3,54 @@ html{
     font-family: 'Kalam';
 }
 body{
-    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(40, 180, 133, 0.8)), url(./images/headerphoto.webp);
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(40, 180, 133, 0.8)), url(../images/headerphoto.webp);
     background-size: 100% 50%;
     background-repeat: no-repeat;
     height: 100vh;
-    background-color: rgb(179, 196, 196);
+    background-color: rgb(234, 243, 231);
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 nav, ul, a{
-    display: inline-block;
+    display: block;
     margin-top: 0px;
     padding-top: 0px;
     text-decoration: none;
     color: white;
     font-size: 1.1rem;
+    
+    
+}
+ul{
+    width: 75vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
 }
 nav ul li{
     list-style-type: none;
     display: inline-block;
-    width: 8.5rem;
+    width: 7.5rem;
     text-align: center;
     margin-top: 0px;
     padding-top: 0px;
-
+    margin-left: -30px;
 }
 header{
-    display: inline-block;
+    display: flex;
     margin-top: 0px;
     padding-top: 0px;
-    height: 10%;   
+    height: 6.5%;  
+     
 }
 main{
-    height: 80%;
-    width: 80%;
-    background-color: white;
+    height: 90%;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.986);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1.8fr .2fr;
@@ -91,14 +103,23 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     border-bottom-left-radius: .5rem;
     border-bottom-right-radius: .5rem;
-   
 }
 footer img{
-    width: 3.5%;
-    padding: .5rem;
+    width: 45%;
+    
+    display: flex;
 }
+footer  a {
+    width: 5rem;
+    
+}
+h3{
+    margin: 0px;
+}
+
 h3::after{
     content: "";
     display: block;
@@ -106,23 +127,23 @@ h3::after{
     width: 80%;
 }
 h1{
-    margin-top: .5;
     font-size: 2rem;
+    margin: 2px;
+   
 }
 .speech-bubble {
-        width: 100px;
-        margin-top: 50px auto;
-        border: 2px solid  rgb(96, 199, 104);
-        padding: 1px;
-        text-align: center;
-        font-weight: 900;
-        color:  rgb(96, 199, 104);
-        font-family: arial;
-        position: relative;
-        background-color: rgb(96, 199, 104);
-        color:white;
-        margin-bottom: 0px;
-      }
+    width: 100px;
+    margin-top: 50px auto;
+    border: 2px solid  rgb(96, 199, 104);
+    text-align: center;
+    font-weight: 900;
+    color:  rgb(96, 199, 104);
+    font-family: arial;
+    position: relative;
+    background-color: rgb(96, 199, 104);
+    color:white;
+    margin-bottom: 0px;
+}
 
 .speech-bubble:after {
 	content: '';
@@ -141,12 +162,22 @@ h1{
 }
 
 #main-profile-photo{
-    
     width: 80%;
     margin: 1.5rem;
     background-size: auto;
     background-color: rgb(222, 235, 223);
 } 
+
+#homepage{
+    position: absolute;
+    max-width: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: darkgray;
+
+}
+
 
 @media  screen and  (max-width: 750px)  {
      /*enter css here to apply for both condition*/
@@ -156,7 +187,7 @@ h1{
         background-color: white;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows:  .5fr 2.4fr .3fr;
+        grid-template-rows:  .5fr 2.2fr .3fr;
         grid-template-areas: "section-img section-img section-img section-img section-img" "section-content section-content section-content section-content section-content" " footer footer footer footer footer";
         border-radius: .5rem;
         min-height: 25rem;}
@@ -174,24 +205,37 @@ h1{
 
     #main-profile-photo{
         width: 40%;
-        margin: 1.5rem;
+        margin: .5rem;
         background-size: auto;
         background-color: rgb(243, 247, 239);
         } 
     #article-contact label{
         margin-left: 15px;
-
-
     }
     footer img{
-        width: 5.5%;
+        width: 35%;
         padding: .5rem;
     }
     .speech-bubble{
-        margin: auto;
+        font-size: .7rem;
+        margin:auto
+    }
+    .speech-bubble:after {
+        content: '';
+	    border: 20px solid transparent;
     }
     h3::after{
         text-align: center;
         margin: auto;
+        margin-bottom: 0px;
+    }
+    a, h1{
+        font-size: 1rem;
+    }
+    label, address{
+        font-size: .8rem;
     }
  }
+a:active{
+    color: white;
+}
