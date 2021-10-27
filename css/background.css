@@ -1,6 +1,7 @@
 html {
-  font-size: 16.5px;
-  font-family: "Kalam";
+  font-size: 18px;
+  /* font-family: "Kalam"; */
+  font-family: sans-serif;
 }
 h2 {
   margin-top: 0rem;
@@ -29,6 +30,7 @@ main {
   width: 92vw;
   height: 90vh;
   background: rgb(204, 238, 215);
+  border-radius: 5px;
 }
 #section-background {
   flex-basis: 59%;
@@ -107,21 +109,26 @@ header {
   align-items: center;
   justify-content: center;
   align-content: center;
-  height: 1.8rem;
+  height: 2rem;
+  padding-bottom: 3px;
   width: 2rem;
-  padding-top: 3px;
   top: 0%;
   right: 0%;
 }
 #menu-icon:hover {
   color: yellow;
 }
+#art-pcoders:hover,
+#art-capital:hover,
+#art-kardan:hover {
+  transform: translateX(0.2rem) scale(1.015);
+}
 ul li:hover {
   color: white;
   font-weight: bold;
 }
 main article {
-  overflow: h;
+  overflow: hidden;
   position: absolute;
   border: 2px solid rgb(68, 47, 255);
   /* box-shadow: 0rem 0.2rem 0.8rem 0rem rgb(94, 97, 90); */
@@ -246,14 +253,13 @@ main article:hover {
   outline: 0.3rem solid #252599;
 }
 #section-info h1 {
-  margin-top: 1rem;
   font-weight: 700;
   font-size: 1.8rem;
   color: #dce2dc;
   text-transform: uppercase;
   background-image: linear-gradient(to right, #28b485, rgba(0, 0, 0, 0.61));
   padding-bottom: 0;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
   box-shadow: 0 0.5rem 0.5rem rgba(85, 187, 119, 0.5);
 }
 #art-pcoders img,
@@ -267,7 +273,7 @@ main article:hover {
 #art-capital {
   margin-top: 0.4rem;
   padding: 0.5rem;
-
+  transition: all 0.2s;
   background-color: honeydew;
   box-shadow: 0 0.5rem 0.5rem rgba(85, 187, 119, 0.5);
 }
@@ -287,16 +293,14 @@ p {
 }
 
 @media screen and (max-width: 1250px) {
-  html {
-    font-size: 13px;
+  main {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 700px) {
-  html {
-    font-size: 13px;
-  }
   main {
     flex-direction: column;
+    font-size: 14px;
   }
   main article {
     position: relative;
@@ -325,14 +329,14 @@ p {
     margin: 0;
     outline: none;
   }
+  #section-info h1 {
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-height: 450px) {
   @media screen and (max-width: 1000px) {
-    html {
-      font-size: 16px;
-    }
-
     main {
+      font-size: 16px;
       flex-direction: column;
     }
     main article {
@@ -361,6 +365,9 @@ p {
       transform: none;
       margin: 0;
       outline: none;
+    }
+    #section-info h1 {
+      margin-bottom: 0;
     }
   }
 }
