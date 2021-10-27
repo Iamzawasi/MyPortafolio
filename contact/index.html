@@ -13,12 +13,16 @@
   </head>
   <body>
     <header>
-      <nav>
+      <p id="menu-icon" onclick="openMenu()">&#9776;</p>
+      <div id="navigation__background"></div>
+      <nav id="navContent">
+        <a href="javascript:void(0)" id="closebtn" onclick="closeMenu()"
+          >&times;</a
+        >
         <ul>
-          <li><a href="#">Home Page</a></li>
-          <li><a href="#">Background</a></li>
-          <li><a href="#">Objectives</a></li>
-          <li><a href="#">Contact me</a></li>
+          <li><a href="../index.html">Home Page</a></li>
+          <li><a href="../background/">Background</a></li>
+          <li><a href="../contact/">Contact me</a></li>
         </ul>
       </nav>
     </header>
@@ -40,7 +44,11 @@
           <label>Age</label>
           <address>30 Years Old</address>
           <label id="label">E-mail</label>
-          <address>ahmadzia.wasi@powercoders.org</address>
+          <address>
+            <a href="mailto:ahmadzia.wasi@powercoders.org">
+              ahmadzia.wasi@powercoders.org</a
+            >
+          </address>
           <label>Phone</label>
           <address>+41 78 205 9003</address>
           <label>Job Status</label>
@@ -62,5 +70,6 @@
       </footer>
     </main>
     <section id="homepage"></section>
+    <script src="../javascript/javascript.js"></script>
   </body>
 </html>

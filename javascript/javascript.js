@@ -2,7 +2,7 @@ function openMenu() {
   document.querySelector("nav").style.visibility = "visible";
   document.querySelector("#navigation__background").style.transform =
     "scale(90)";
-  document.querySelector("#navigation__background").style.zIndex = "1";
+  document.querySelector("#navigation__background").style.zIndex = "150";
   document.querySelector("#navigation__background").style.visibility =
     "visible";
 }
