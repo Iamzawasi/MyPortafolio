@@ -18,6 +18,7 @@
         position: absolute;
         top: 35%;
       }
+
       p {
         position: absolute;
         top: 45%;
@@ -25,7 +26,26 @@
     </style>
   </head>
   <body>
-    <h1>Coming soon...</h1>
+    <h1 id="timer4Sec">
+      Within 5 seconds you will redirect to 000webhostapp for my project in
+      Apache, MYSQL and PHP.
+    </h1>
     <p><a href="../index.html">click here to go back to Homepage</a></p>
+    <script>
+      getText = 5;
+      function reduceNumber() {
+        getText = parseInt(getText);
+        if (getText > 0) {
+          getText = getText - 1;
+          textToDisplay = `Within ${getText} seconds you will redirect to 000webhostapp for my project in Apache, MYSQL and PHP.`;
+          document.getElementById("timer4Sec").innerHTML = textToDisplay;
+        } else {
+          window.location.href =
+            "https://myprojectpowercoders.000webhostapp.com/";
+          clearInterval(myInterval);
+        }
+      }
+      myInterval = setInterval(reduceNumber, 1000);
+    </script>
   </body>
 </html>
