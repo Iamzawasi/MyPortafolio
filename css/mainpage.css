@@ -319,11 +319,17 @@ p {
   #section-right article {
     margin: 5px;
   }
+  #newyear {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 800px) {
   main {
     display: flex;
     flex-direction: column;
+  }
+  #newyear {
+    width: 90%;
   }
   /* #section-left p::before {
     content: "Ahmad Zia Wasi \a";
@@ -369,4 +375,19 @@ p {
 ul li:hover {
   color: white;
   font-weight: bold;
+}
+#PopupNew {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(137, 139, 139, 0.52);
+  z-index: 1100;
+}
+
+#newyear {
+  width: 70%;
 }
