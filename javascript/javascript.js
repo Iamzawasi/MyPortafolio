@@ -13,7 +13,7 @@ function closeMenu() {
   document.querySelector("#navigation__background").style.zIndex = "0";
   document.querySelector("#navigation__background").style.visibility = "hidden";
 }
-$message = setTimeout(mymessage, 5000);
+//$message = setTimeout(mymessage, 5000);
 function mymessage() {
   sty = document.getElementById("PopupNew").style;
   sty.display = "none";
