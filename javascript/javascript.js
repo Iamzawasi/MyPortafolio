@@ -14,10 +14,12 @@ function closeMenu() {
   document.querySelector("#navigation__background").style.visibility = "hidden";
 }
 //$message = setTimeout(mymessage, 5000);
-function mymessage() {
-  sty = document.getElementById("PopupNew").style;
-  sty.display = "none";
-}
+sty = document.getElementById("PopupNew").style;
+sty.display = "none";
+// function mymessage() {
+//   sty = document.getElementById("PopupNew").style;
+//   sty.display = "none";
+// }
 
 // IntervalForTimeOutVar = setInterval(CheckTimeOutVar, 31000);
 // function CheckTimeOutVar() {
