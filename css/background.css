@@ -120,7 +120,8 @@ header {
 }
 #art-pcoders:hover,
 #art-capital:hover,
-#art-kardan:hover {
+#art-kardan:hover,
+.art-all:hover {
   transform: translateX(0.2rem) scale(1.015);
 }
 ul li:hover {
@@ -225,7 +226,7 @@ h4 {
 }
 #article-first {
   top: 5%;
-  right: 5%;
+  right: 15%;
   background-image: linear-gradient(
     to right bottom,
     rgb(190, 7, 7),
@@ -238,11 +239,20 @@ h4 {
 }
 #article-three {
   top: 40%;
-  right: 15%;
+  right: 18%;
   background-image: linear-gradient(
     to right bottom,
     rgb(53, 60, 163),
     rgb(117, 230, 206)
+  );
+}
+#article-four {
+  top: 25%;
+  right: 2%;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(223, 224, 234),
+    rgb(5, 180, 145)
   );
 }
 main article:hover {
@@ -263,14 +273,22 @@ main article:hover {
   box-shadow: 0 0.5rem 0.5rem rgba(85, 187, 119, 0.5);
 }
 #art-pcoders img,
-#art-capital img {
+#art-capital img,
+.art-all img {
   width: 25%;
   padding: 0;
   margin: 0;
 }
+.art-all img {
+  width: 10%;
+  padding: 0;
+  margin: 0;
+}
+
 #art-pcoders,
 #art-kardan,
-#art-capital {
+#art-capital,
+.art-all {
   margin-top: 0.4rem;
   padding: 0.5rem;
   transition: all 0.2s;
@@ -284,7 +302,8 @@ p {
 }
 #art-pcoders #img-location,
 #art-kardan #img-location,
-#art-capital #img-location {
+#art-capital #img-location,
+.art-all #img-location {
   width: 8%;
   float: right;
 }
@@ -313,7 +332,8 @@ p {
   }
   #article-first,
   #article-two,
-  #article-three {
+  #article-three,
+  .article-all {
     margin-top: 5px;
     border: none;
     box-shadow: 0 0.5rem 0.5rem rgba(85, 187, 119, 0.5);
@@ -350,7 +370,8 @@ p {
     }
     #article-first,
     #article-two,
-    #article-three {
+    #article-three,
+    .article-all {
       margin-top: 5px;
       border: none;
       box-shadow: 0 0.5rem 0.5rem rgba(85, 187, 119, 0.5);
