@@ -316,8 +316,8 @@ p {
     display: grid;
     padding: 1rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
-    grid-template-areas: "section-right-span section-right-span" "article-html article-css" "article-javascript article-php" " article-python article-sql article-sql";
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: "section-right-span section-right-span" "article-html article-css" "article-javascript article-php" " article-python  article-sql";
   }
   #section-right article {
     margin: 5px;
