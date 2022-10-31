@@ -157,7 +157,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1.5fr;
-  grid-template-areas: "section-right-span section-right-span section-right-span section-right-span section-right-span section-right-span" "article-php article-python article-sql article-html article-css article-javascript";
+  grid-template-areas: "section-right-span section-right-span section-right-span section-right-span section-right-span section-right-span" "article-php article-python article-javascript article-sql article-html article-css ";
 }
 #section-right-span {
   grid-area: section-right-span;
