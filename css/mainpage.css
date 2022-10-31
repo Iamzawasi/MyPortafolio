@@ -155,9 +155,9 @@ main {
   border-bottom-right-radius: 0.5rem;
   padding: 1rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1.5fr;
-  grid-template-areas: "section-right-span section-right-span section-right-span section-right-span section-right-span" "article-html article-css article-javascript article-python article-sql ";
+  grid-template-areas: "section-right-span section-right-span section-right-span section-right-span section-right-span section-right-span" "article-php article-python article-sql article-html article-css article-javascript";
 }
 #section-right-span {
   grid-area: section-right-span;
@@ -181,6 +181,9 @@ p {
 }
 #article-javascript {
   grid-area: article-javascript;
+}
+#article-php {
+  grid-area: article-php;
 }
 #article-python {
   grid-area: article-python;
@@ -314,7 +317,7 @@ p {
     padding: 1rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
-    grid-template-areas: "section-right-span section-right-span" "article-html article-css" "article-javascript article-python" "article-sql article-sql";
+    grid-template-areas: "section-right-span section-right-span" "article-html article-css" "article-javascript article-php" " article-python article-sql article-sql";
   }
   #section-right article {
     margin: 5px;
