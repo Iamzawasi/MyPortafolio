@@ -8,39 +8,47 @@
     <style>
       body {
         background-color: rgb(125, 214, 90);
-        font-size: 80%;
       }
       div {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
         flex-direction: column;
-        text-align: center;
+      }
+      li {
+        padding-top: 5px;
       }
       h1 {
-        position: absolute;
-        top: 40%;
-      }
-      p {
-        position: absolute;
-        top: 60%;
+        text-align: center;
       }
     </style>
   </head>
   <body>
+    <h1>
+      Bellow is the list of projects coded in different programming languages
+    </h1>
     <div>
-      <h1 id="timer4Sec">
-        Within 5 seconds you will redirect to 000webhostapp for my project in
-        Apache, MYSQL and PHP.
-      </h1>
-      <p>
-        <a id="goHomePage" href="../index.html"
-          >click here to go back to Homepage</a
-        >
-      </p>
+      <ol>
+        <li>
+          <a
+            id="phpplatform"
+            href="https://myprojectpowercoders.000webhostapp.com/"
+            >php Project (Maria DB, SQL, Jquery, Apache)</a
+          >
+        </li>
+        <li>
+          <a id="GameOfLife" href="./projects/GameofLife"
+            >Game of Life, JavaScript Version</a
+          >
+        </li>
+        <li>
+          <a id="goHomePage" href="../index.html"
+            >click here to go back to Homepage</a
+          >
+        </li>
+      </ol>
     </div>
-    <script>
-      getText = 5;
+    <!-- <script>
+      getText = 5000;
       function reduceNumber() {
         getText = parseInt(getText);
         if (getText > 0) {
@@ -54,6 +62,6 @@
         }
       }
       myInterval = setInterval(reduceNumber, 1000);
-    </script>
+    </script> -->
   </body>
 </html>
