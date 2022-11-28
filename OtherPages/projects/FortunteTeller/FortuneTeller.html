@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="celebr.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fortune Teller</title>
+  </head>
+  <body>
+    <div class="celebrations">
+      <div class="celeb-piece"></div>
+      <div class="celeb-piece"></div>
+      <div class="celeb-piece"></div>
+      <div class="celeb-piece"></div>
+      <div class="celeb-piece"></div>
+      <div class="celeb-piece"></div>
+      <div class="celeb-piece"></div>
+      <div class="celeb-piece"></div>
+      <div class="celeb-piece"></div>
+      <div class="celeb-piece"></div>
+      <div class="celeb-piece"></div>
+      <div class="celeb-piece"></div>
+      <div class="celeb-piece"></div>
+    </div>
+    <div class="container">
+      <h1>Fortune teller</h1>
+      <p>
+        Warning: the Result of your fortune can be catastrophic, if you press
+        the button you agree with offensive statement of the program
+      </p>
+      <input
+        type="button"
+        value="Discover your fortune"
+        onclick=" celebClasses('confetti', 'confetti-piece')"
+      />
+    </div>
+    <script>
+      function celebClasses(
+        celebMain = "celebrations",
+        celePiece = "celeb-piece"
+      ) {
+        celebr = document.querySelector(".celebrations");
+        celebr_piece = document.querySelectorAll(".celeb-piece");
+        if (celebr == undefined) {
+          celebr = document.querySelector(".confetti");
+          celebr_piece = document.querySelectorAll(".confetti-piece");
+        } else {
+          setTimeout(fortunediscoverer, 500);
+        }
+        celebr.setAttribute(`class`, celebMain);
+        celebr_piece.forEach((element) => {
+          element.setAttribute(`class`, celePiece);
+        });
+      }
+      function fortunediscoverer() {
+        let partnerName = [
+          "Ahmad",
+          "John",
+          "Amin",
+          "Adnan",
+          "David",
+          "Miller",
+          "Butler",
+          "Christiano",
+          "Faisal",
+          "Chuan Li",
+          "Sheik Zabir",
+        ];
+        let numberOfChildren = [1, 4, 3, 0, 5, 3, 10, 5, 2, 4];
+        let locations = [
+          "Paris",
+          "Zurich",
+          "Zug",
+          "Heaven",
+          "Hell",
+          "New York",
+          "Ontario",
+          "Basel",
+          "California",
+          "Olten",
+        ];
+        let jobs = [
+          "Programmer",
+          "Driver",
+          "Instructor",
+          "Broker",
+          "Film Star",
+          "Criminal",
+          "UnderCover Police",
+          "Commando",
+          "Cook",
+          "Writter",
+        ];
+        let NameAndLocation = Math.floor(Math.random() * 10);
+        let ChildrenAndJobTitle = Math.floor(Math.random() * 10);
+        let Yourfortune = ` You will be Married to ${partnerName[NameAndLocation]} with ${numberOfChildren[ChildrenAndJobTitle]} Kid(s) and you will be working at ${locations[NameAndLocation]} as a ${jobs[ChildrenAndJobTitle]} 😜`;
+        alert(Yourfortune);
+        //setTimeout celeb-piece
+
+        TermintateCelebrations = setTimeout(celebClasses, 1000);
+      }
+    </script>
+  </body>
+</html>
