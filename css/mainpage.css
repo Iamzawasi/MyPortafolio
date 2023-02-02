@@ -375,9 +375,13 @@ p {
     grid-template-areas: "span-left span-left";
   }
 }
+
 ul li:hover {
   color: white;
   font-weight: bold;
+}
+#developer-mode {
+  padding: 10px;
 }
 #PopupNew {
   display: flex;

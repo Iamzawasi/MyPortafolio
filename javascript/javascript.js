@@ -37,3 +37,29 @@ sty.display = "none";
 // if (typeof (x != "undefined")) {
 //   console.log("its working" + document.getElementById("nothing").length);
 // }
+function bgcolChange() {
+  inpRight = document.getElementById("color-right").value;
+  inpLeft = document.getElementById("color-left").value;
+  if (inpLeft != "" && inpLeft != "") {
+    ToRightDecimal =
+      parseInt(inpRight.slice(1, 3), 16) +
+      ", " +
+      parseInt(inpRight.slice(3, 5), 16) +
+      ", " +
+      parseInt(inpRight.slice(5, 7), 16) +
+      ", ";
+    ToleftDecimal =
+      parseInt(inpLeft.slice(1, 3), 16) +
+      ", " +
+      parseInt(inpLeft.slice(3, 5), 16) +
+      ", " +
+      parseInt(inpLeft.slice(5, 7), 16) +
+      ", ";
+    console.log(ToleftDecimal);
+
+    document.getElementById(
+      "section-left"
+    ).style.backgroundImage = `linear-gradient( to right bottom, rgba(${ToRightDecimal} 0.993), 
+      rgba(${ToleftDecimal} 0.8)`;
+  }
+}
