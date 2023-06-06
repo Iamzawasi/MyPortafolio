@@ -16,7 +16,7 @@ function closeMenu() {
 let today = new Date().toISOString().slice(0, 10);
 sty = document.getElementById("PopupNew").style;
 if (
-  today.toString() == "2023-03-20" ||
+  today.toString() == "2023-06-06" ||
   today.toString() == "2023-03-21" ||
   today.toString() == "2023-03-22"
 ) {
